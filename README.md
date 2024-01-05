@@ -29,9 +29,9 @@ Welcome to the Personal Trainer Website project! This web application is designe
 
 ## Technologies Used
 
-- [Vite](https://vitejs.dev/): A fast development build tool for modern web apps.
-- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
-- [Styled Components](https://styled-components.com/): Use the best bits of ES6 and CSS to style your apps without stress.
+- ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white): A fast development build tool for modern web apps.
+- ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black): A JavaScript library for building user interfaces.
+- ![Styled Components](https://img.shields.io/badge/styledcomponents-DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white): Use the best bits of ES6 and CSS to style your apps without stress.
 - [React Icons](https://react-icons.github.io/react-icons/): A library of popular icons for React applications.
 
 ## Issues
