@@ -5,6 +5,7 @@ Welcome to the Personal Trainer Website project! This web application is designe
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/personal-trainer)](https://github.com/Alexandrbig1/personal-trainer/commits/main)
+[![GitHub license](https://img.shields.io/github/license/Alexandrbig1/personal-trainer)](https://github.com/Alexandrbig1/personal-trainer/blob/main/LICENSE)
 [![Vite](https://img.shields.io/badge/Vite-5.0.8-6868F2)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-18.2.0-51CAEF.svg)](https://reactjs.org/)
 [![Styled Components](https://img.shields.io/badge/Styled_Components-6.1.6-D664C0.svg)](https://styled-components.com/)
