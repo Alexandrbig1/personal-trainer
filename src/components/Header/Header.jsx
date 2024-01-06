@@ -1,9 +1,12 @@
-import { Logo } from "./Header.styled";
+import Logo from "../Logo/Logo";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import { HeaderContainer } from "./Header.styled";
 
-export default function Header() {
+export default function Header({ toggleTheme }) {
   return (
-    <header>
-      <Logo>header</Logo>
-    </header>
+    <HeaderContainer>
+      <Logo />
+      <ThemeSwitcher toggleTheme={toggleTheme} />
+    </HeaderContainer>
   );
 }
