@@ -49,8 +49,15 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
+    /* line-height: 1; */
+    /* vertical-align: middle; */
   }
 `;
