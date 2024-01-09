@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa6";
 
 export const HeaderContainer = styled.header`
-  padding: 24px;
+  padding: 2.2rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,47 +64,5 @@ export const HeaderText = styled.a`
 
   &:hover:before {
     width: 50%;
-  }
-`;
-
-export const Link = styled.a`
-  display: block;
-  width: 3.6rem;
-  height: 3.6rem;
-`;
-
-export const InstagramIcon = styled(FaInstagram)`
-  color: ${(p) => p.theme.colors.mainTextColor};
-  font-size: 3.6rem;
-  transition: 0.2s linear;
-  padding: 0.6rem;
-  border-radius: 50%;
-
-  &:hover {
-    color: #e1306c;
-  }
-`;
-
-export const YoutubeIcon = styled(FaYoutube)`
-  color: ${(p) => p.theme.colors.mainTextColor};
-  font-size: 3.6rem;
-  transition: 0.2s linear;
-  padding: 0.6rem;
-  border-radius: 50%;
-
-  &:hover {
-    color: #ff0000;
-  }
-`;
-
-export const FacebookIcon = styled(FaFacebook)`
-  color: ${(p) => p.theme.colors.mainTextColor};
-  font-size: 3.6rem;
-  transition: 0.2s linear;
-  padding: 0.6rem;
-  border-radius: 50%;
-
-  &:hover {
-    color: #3b5998;
   }
 `;

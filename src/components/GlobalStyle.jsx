@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
   background-color: ${(p) => p.theme.colors.mainBgColor};
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
   }
 
   p {
