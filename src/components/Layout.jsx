@@ -23,3 +23,7 @@ export const FooterContainer = styled.footer`
   padding: 6.4rem 3.2rem 1.6rem;
   background-color: ${(p) => p.theme.colors.footerBgColor};
 `;
+
+export const Section = styled.section`
+  margin-bottom: 8.6rem;
+`;
