@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: left;
-  z-index: -2;
+  z-index: 1;
 
   display: grid;
   align-items: center;
@@ -24,7 +24,7 @@ export const HeroContainer = styled.div`
     height: 100%;
     background: linear-gradient(#000, #000);
     opacity: 0.7;
-    z-index: -1;
+    z-index: -5;
   }
 `;
 

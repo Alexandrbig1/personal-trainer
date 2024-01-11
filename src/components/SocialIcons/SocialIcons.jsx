@@ -11,7 +11,7 @@ export default function SocialIcons({ color }) {
     <SocialMenu>
       <li>
         <Link
-          href="https://github.com/Alexandrbig1"
+          href="https://instagram.com/fitlife_alex1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -20,7 +20,7 @@ export default function SocialIcons({ color }) {
       </li>
       <li>
         <Link
-          href="https://github.com/Alexandrbig1"
+          href="https://youtube.com/@ALEXandRbig1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ export default function SocialIcons({ color }) {
       </li>
       <li>
         <Link
-          href="https://github.com/Alexandrbig1"
+          href="https://facebook.com/profile.php?id=100079407520314"
           target="_blank"
           rel="noopener noreferrer"
         >

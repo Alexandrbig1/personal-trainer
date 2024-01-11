@@ -14,42 +14,40 @@ export const Link = styled.a`
 `;
 
 export const InstagramIcon = styled(FaInstagram)`
-  /* color: ${(p) => p.theme.colors.mainTextColor}; */
   color: ${(props) =>
-    props.color ? props.color : props.theme.colors.mainTextColor};
+    props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
   font-size: 3.6rem;
   transition: 0.2s linear;
   padding: 0.6rem;
   border-radius: 50%;
 
   &:hover {
-    color: #e1306c;
+    color: ${(props) => (props?.hover ? props?.hover?.instagram : "#e1306c")};
   }
 `;
 
 export const YoutubeIcon = styled(FaYoutube)`
   color: ${(props) =>
-    props.color ? props.color : props.theme.colors.mainTextColor};
+    props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
   font-size: 3.6rem;
   transition: 0.2s linear;
   padding: 0.6rem;
   border-radius: 50%;
 
   &:hover {
-    color: #ff0000;
+    color: ${(props) => (props?.hover ? props?.hover?.youtube : "#ff0000")};
   }
 `;
 
 export const FacebookIcon = styled(FaFacebook)`
-  /* color: ${(p) => p.theme.colors.mainTextColor}; */
   color: ${(props) =>
-    props.color ? props.color : props.theme.colors.mainTextColor};
+    props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
   font-size: 3.6rem;
-  transition: 0.2s linear;
+  transition: color 0.2s linear;
   padding: 0.6rem;
   border-radius: 50%;
 
   &:hover {
-    color: #3b5998;
+    color: ${(props) => (props?.hover ? props?.hover?.facebook : "#3b5998")};
   }
 `;

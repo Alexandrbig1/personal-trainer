@@ -19,10 +19,10 @@ export default function Header({ toggleTheme, isDarkTheme }) {
               <HeaderText href="#">home</HeaderText>
             </li>
             <li>
-              <HeaderText href="#">about</HeaderText>
+              <HeaderText href="#about">about</HeaderText>
             </li>
             <li>
-              <HeaderText href="#">exercises</HeaderText>
+              <HeaderText href="#exercises">exercises</HeaderText>
             </li>
           </NavMenu>
           <SocialIcons />

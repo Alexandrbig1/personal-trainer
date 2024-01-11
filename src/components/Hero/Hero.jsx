@@ -14,7 +14,7 @@ export default function Hero() {
     <HeroContainer>
       <HeroImgWrapper>
         <HeroImgContainer>
-          <HeroImg src="/src/assets/pt.png" alt="" />
+          <HeroImg src="/src/assets/pt.png" alt="Personal Trainer" />
         </HeroImgContainer>
         <HeroTextWrapper>
           <HeroTitle>
