@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { Container, FooterContainer, Section, SectionExercise } from "./Layout";
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
+import About from "./About/About";
 
 const theme = {
   light: {
@@ -74,7 +75,9 @@ function App() {
         {/* <Section>
           <Line></Line>
         </Section> */}
-        <Section>{/* <About /> */}</Section>
+        <Section>
+          <About />
+        </Section>
         <SectionExercise id="exercises">
           {/* <FetchedCards /> */}
         </SectionExercise>
