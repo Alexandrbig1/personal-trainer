@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Alex Smagin",
+  "license": "MIT",
+  "description": "This is Personal Trainer React project build with Vite",
   "homepage": "http://Alexandrbig1.github.io/personal-trainer",
   "scripts": {
     "dev": "vite",
