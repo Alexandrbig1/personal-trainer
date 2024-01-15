@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GlobalStyle } from "./GlobalStyle";
 import Header from "./Header/Header";
 import { ThemeProvider } from "styled-components";
-import { Container, FooterContainer, Section, SectionExercise } from "./Layout";
+import { Container, FooterContainer, Section } from "./Layout";
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
@@ -16,6 +16,8 @@ const theme = {
       accentColor: "#d9243a",
       accentColorLowOp: "rgb(217, 36, 58,0.3)",
       mainTextColorLowOp: "rgb(36, 36, 36,0.5)",
+      burgerOverlay: "rgb(250, 250, 250,0.9)",
+      initialCardTextColor: "#f8f9fa",
       // mainBgColor: "#e9ecef",
       // mainBgColor: "#F4F4F4",
       mainBgColor: "#f8f9fa",
@@ -33,8 +35,10 @@ const theme = {
       greenColor: "#0ca678",
       darkGradientCards: "rgba(17, 17, 17, 0.5)",
       modalBgColor: "#242424",
+      modalContainerColor: "#242424",
       mainBackdropBgColor: "rgba(18, 20, 23, 0.5)",
       notActivePaginationButton: "#d4d4d4",
+      scrollUpColor: "rgba(18, 20, 23, 0.5)",
     },
   },
   dark: {
@@ -45,6 +49,8 @@ const theme = {
       accentColor: "#d9243a",
       accentColorLowOp: "rgb(217, 36, 58,0.3)",
       mainTextColorLowOp: "rgb(250, 250, 250,0.5)",
+      burgerOverlay: "rgb(36, 36, 36,0.9)",
+      initialCardTextColor: "#f8f9fa",
       mainBgColor: "#242424",
       mainBgColorRev: "#f8f9fa",
       aboutBgColor: "#1d1d1d",
@@ -59,8 +65,10 @@ const theme = {
       greenColor: "#0ca678",
       darkGradientCards: "rgba(17, 17, 17, 0.5)",
       modalBgColor: "#242424",
-      mainBackdropBgColor: "rgba(244, 244, 244, 0.5)",
+      modalContainerColor: "#dfe0e1",
+      mainBackdropBgColor: "rgba(146,146,146, 0.5)",
       notActivePaginationButton: "#494949",
+      scrollUpColor: "rgba(200, 200, 200, 0.5)",
     },
   },
 };
@@ -89,13 +97,10 @@ function App() {
         <Section>
           <About />
         </Section>
-        <SectionExercise id="exercises">
-          {/* <FetchedCards /> */}
-        </SectionExercise>
-        {/* <Section>
+      </Container>
+      {/* <Section>
           <Line></Line>
         </Section> */}
-      </Container>
       <FooterContainer>
         <Container>
           <Footer />
