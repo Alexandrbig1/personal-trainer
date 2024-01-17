@@ -19,6 +19,20 @@ export const Container = styled.div`
   }
 `;
 
+export const SlideContainer = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3.2rem;
+  justify-content: space-between;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+`;
+
 export const FooterContainer = styled.footer`
   padding: 6.4rem 3.2rem 1.6rem;
   background-color: ${(p) => p.theme.colors.footerBgColor};
@@ -29,37 +43,14 @@ export const Section = styled.section`
 `;
 
 export const SectionExercise = styled(Section)`
-  padding: 40px 0 80px;
-
   @media (min-width: 768px) {
-    padding: 64px 0 100px;
+    padding: 40px 0 40px;
   }
 
   @media (min-width: 1440px) {
-    padding-bottom: 132px;
+    /* padding-bottom: 132px; */
   }
 `;
-
-// export const ExercisesSectionContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 80px;
-
-//   @media (min-width: 768px) {
-//     gap: 64px;
-//   }
-
-//   @media (min-width: 1440px) {
-//     flex-direction: row;
-//     gap: 32px;
-//   }
-// `;
-
-// export const ExerciseCardsContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// `;
 
 export const Line = styled.div`
   height: 0.1px;

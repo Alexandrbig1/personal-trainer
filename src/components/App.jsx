@@ -2,10 +2,11 @@ import { useState } from "react";
 import { GlobalStyle } from "./GlobalStyle";
 import Header from "./Header/Header";
 import { ThemeProvider } from "styled-components";
-import { Container, FooterContainer, Section } from "./Layout";
+import { Container, FooterContainer, Section, SectionExercise } from "./Layout";
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
+import Signs from "./Signs/Signs";
 
 const theme = {
   light: {
@@ -31,6 +32,7 @@ const theme = {
       secondaryWhiteTextColorLowOp: "rgba(244, 244, 244, 0.5)",
       inactiveColor: "rgba(244, 244, 244, 0.2)",
       secondaryBlackTextColorLowOp: "rgba(36, 36, 36, 0.5)",
+      iconsBgColorLowOp: "rgba(36, 36, 36, 0.1)",
       starColor: "#eea10c",
       greenColor: "#0ca678",
       darkGradientCards: "rgba(17, 17, 17, 0.5)",
@@ -39,6 +41,7 @@ const theme = {
       mainBackdropBgColor: "rgba(18, 20, 23, 0.5)",
       notActivePaginationButton: "#d4d4d4",
       scrollUpColor: "rgba(18, 20, 23, 0.5)",
+      slideArrowButtons: "rgba(244, 244, 244, 0.9)",
     },
   },
   dark: {
@@ -61,6 +64,7 @@ const theme = {
       secondaryWhiteTextColorLowOp: "rgba(36, 36, 36, 0.5)",
       inactiveColor: "rgba(36, 36, 36, 0.2)",
       secondaryBlackTextColorLowOp: "rgba(244, 244, 244, 0.5)",
+      iconsBgColorLowOp: "rgba(244, 244, 244, 0.1)",
       starColor: "#eea10c",
       greenColor: "#0ca678",
       darkGradientCards: "rgba(17, 17, 17, 0.5)",
@@ -69,6 +73,7 @@ const theme = {
       mainBackdropBgColor: "rgba(146,146,146, 0.5)",
       notActivePaginationButton: "#494949",
       scrollUpColor: "rgba(200, 200, 200, 0.5)",
+      slideArrowButtons: "rgba(244, 244, 244, 0.9)",
     },
   },
 };
@@ -91,16 +96,30 @@ function App() {
         <Section>
           <Hero />
         </Section>
-        {/* <Section>
-          <Line></Line>
-        </Section> */}
         <Section>
           <About />
         </Section>
       </Container>
+      <SectionExercise id="exercises">
+        <Container>{/* <FetchedCards /> */}</Container>
+      </SectionExercise>
       {/* <Section>
           <Line></Line>
         </Section> */}
+      <Section id="gallery">
+        <Container>
+          {/* <SlideContainer>
+            <SlideImages />
+            <SlideText />
+          </SlideContainer> */}
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Signs />
+        </Container>
+      </Section>
+
       <FooterContainer>
         <Container>
           <Footer />
