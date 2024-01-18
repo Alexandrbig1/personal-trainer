@@ -20,7 +20,7 @@ export default function Cta() {
           <FaPhone />
         </ButtonIconTelWrapper>
       </HeroBtn>
-      <HeroBtn href="mailto:alexsmaginpt@gmail.com">
+      <HeroBtn href="mailto:pt@alexsmagin.com">
         Email Me
         <ButtonIconMailWrapper>
           <GrMailOption />
