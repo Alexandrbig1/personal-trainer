@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 import About from "./About/About";
 import Signs from "./Signs/Signs";
 import BMI from "./BMI/BMI";
+import ScrollBtn from "./ScrollBtn/ScrollBtn";
 import { useInView } from "react-intersection-observer";
 
 const theme = {
@@ -132,6 +133,7 @@ function App() {
         </Container>
       </Section>
 
+      <ScrollBtn />
       <FooterContainer>
         <Container>
           <Footer />
