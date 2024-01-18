@@ -1,6 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+const fadeInAnimation = css`
+  animation: ${fadeIn} 500ms linear;
+`;
 
 export const Container = styled.div`
+  position: relative;
   margin: 0 auto;
   width: 100%;
   padding: 0 2rem;
@@ -40,15 +56,16 @@ export const FooterContainer = styled.footer`
 
 export const Section = styled.section`
   margin-bottom: 8.6rem;
+  transition: opacity 500ms linear;
+  ${(props) => (props?.$inView ? fadeInAnimation : "")};
 `;
 
 export const SectionExercise = styled(Section)`
+  ${(props) => (props?.$inView ? fadeInAnimation : "")};
+  transition: opacity 500ms linear;
+
   @media (min-width: 768px) {
     padding: 40px 0 40px;
-  }
-
-  @media (min-width: 1440px) {
-    /* padding-bottom: 132px; */
   }
 `;
 
