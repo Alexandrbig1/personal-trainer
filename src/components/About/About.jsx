@@ -118,10 +118,7 @@ export default function About() {
         </IconsCardWrapper>
       </IconsContainer>
       <div>
-        <AboutImg
-          src="public/images/about.jpg"
-          alt="Personal Trainer in UFC Gym"
-        />
+        <AboutImg src="/images/about.jpg" alt="Personal Trainer in UFC Gym" />
       </div>
     </AboutContainer>
   );
