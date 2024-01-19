@@ -32,19 +32,19 @@ export default function BMICalculator({ showBMI, setShowBMI }) {
   React.useEffect(() => {
     if (bmi < 18.5) {
       setMessage("You are underweight");
-      setIcon("/images/icons.svg#icon-fitness");
+      setIcon("/public/images/icons.svg#icon-fitness");
       setColor("#00cc44");
     } else if (bmi >= 18.5 && bmi < 25) {
       setMessage("You are on a good shape");
-      setIcon("/images/icons.svg#icon-yoga");
+      setIcon("/public/images/icons.svg#icon-yoga");
       setColor("#3399ff");
     } else if (bmi >= 25 && bmi < 30) {
       setMessage("You are overweight");
-      setIcon("/images/icons.svg#icon-run");
+      setIcon("/public/images/icons.svg#icon-run");
       setColor("#ff9900");
     } else {
       setMessage("You are in the obesity range");
-      setIcon("/images/icons.svg#icon-over");
+      setIcon("/public/images/icons.svg#icon-over");
       setColor("#ff3300");
     }
   }, [bmi]);
