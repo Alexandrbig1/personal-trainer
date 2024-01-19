@@ -64,6 +64,7 @@ export const IconsContainer = styled.div`
     width: 100%;
     max-width: 100%;
   }
+
   @media (min-width: 1440px) {
     padding: 20px;
   }

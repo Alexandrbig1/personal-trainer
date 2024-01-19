@@ -11,16 +11,16 @@ export default function Signs() {
   return (
     <SignsContainer>
       <SignImageWrapper>
-        <SignImage src="public/images/issa.png" />
+        <SignImage src="images/issa.png" />
       </SignImageWrapper>
       <SignRepsWrapper>
-        <SignImage src="public/images/rep.png" />
+        <SignImage src="images/rep.png" />
       </SignRepsWrapper>
       <SignGoldsWrapper>
-        <SignImage src="public/images/golds.png" />
+        <SignImage src="images/golds.png" />
       </SignGoldsWrapper>
       <SignUFCWrapper>
-        <SignImage src="public/images/ufc.png" />
+        <SignImage src="images/ufc.png" />
       </SignUFCWrapper>
     </SignsContainer>
   );
