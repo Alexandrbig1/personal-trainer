@@ -6,7 +6,7 @@
   "author": "Alex Smagin",
   "license": "MIT",
   "description": "This is Personal Trainer React project build with Vite",
-  "homepage": "http://Alexandrbig1.github.io/personal-trainer",
+  "homepage": "https://github.com/Alexandrbig1/personal-trainer",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
