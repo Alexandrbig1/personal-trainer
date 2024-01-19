@@ -11,7 +11,7 @@ export default function Logo({ color }) {
       <LogoIconWrapper>
         <a href="#">
           <LogoIcon color={color}>
-            <use href="/images/icons.svg#icon-logo"></use>
+            <use href="public/images/icons.svg#icon-logo"></use>
           </LogoIcon>
         </a>
       </LogoIconWrapper>
