@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa6";
+import { BsDiscord } from "react-icons/bs";
 
 export const SocialMenu = styled.ul`
   display: flex;
@@ -49,5 +50,18 @@ export const FacebookIcon = styled(FaFacebook)`
 
   &:hover {
     color: ${(props) => (props?.hover ? props?.hover?.facebook : "#3b5998")};
+  }
+`;
+
+export const DiscordIcon = styled(BsDiscord)`
+  color: ${(props) =>
+    props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
+  font-size: 3.6rem;
+  transition: color 0.2s linear;
+  padding: 0.6rem;
+  border-radius: 50%;
+
+  &:hover {
+    color: ${(props) => (props?.hover ? props?.hover?.discord : "#7289d9")};
   }
 `;

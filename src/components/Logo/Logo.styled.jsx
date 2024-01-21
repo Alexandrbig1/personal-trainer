@@ -7,16 +7,23 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoTitle = styled.span`
-  /* color: ${(p) => p.theme.colors.mainTextColor}; */
   color: ${(props) =>
     props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
   font-family: DM Sans;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -1.48px;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.6rem;
+  }
 `;
 
 export const LogoIconWrapper = styled.div`
@@ -26,7 +33,8 @@ export const LogoIconWrapper = styled.div`
 
 export const LogoIcon = styled.svg`
   fill: ${(props) =>
-    props?.color ? props.color?.white : props.theme.colors.mainTextColor};
+    props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
+
   width: 100%;
   height: 100%;
 `;

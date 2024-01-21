@@ -9,13 +9,13 @@ export default function Logo({ color }) {
   return (
     <LogoContainer>
       <LogoIconWrapper>
-        <a href="#">
+        <a href="https://alexsmagin.com">
           <LogoIcon color={color}>
             <use href="images/icons.svg#icon-logo"></use>
           </LogoIcon>
         </a>
       </LogoIconWrapper>
-      <a href="#">
+      <a href="https://alexsmagin.com">
         <LogoTitle color={color}>AlexSmagin</LogoTitle>
       </a>
     </LogoContainer>

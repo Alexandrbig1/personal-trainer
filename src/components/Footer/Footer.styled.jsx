@@ -9,26 +9,82 @@ export const FooterContainer = styled.div`
 export const FooterLogoWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2.4rem;
+
+  @media (min-width: 440px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 `;
 
 export const FooterWrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  justify-content: space-between;
+  gap: 4.8rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 4.8rem;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
+`;
+
+export const FooterTextAndButtonsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  /* display: grid;
-  align-items: self-start;
-  grid-template-columns: 1fr 2fr 1fr; */
+  gap: 4.8rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: space-between; */
+    gap: 4.8rem;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4.8rem;
+  }
 `;
 
 export const FooterText = styled.p`
-  color: #f4f4f4;
+  color: ${(p) => p.theme.colors.heroTextColor};
   font-family: DM Sans;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.07;
   letter-spacing: -1.12px;
+
+  @media (min-width: 365px) {
+    font-size: 3.6rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3.6rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 4.8rem;
+  }
 `;
 
 export const TextPrivacyWrapper = styled.div`
@@ -40,8 +96,17 @@ export const TextPrivacyWrapper = styled.div`
 
 export const FooterInfoWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  gap: 1.2rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
 `;
 
 export const FooterInfoText = styled.p`

@@ -27,7 +27,7 @@ export default function Hero() {
             build your success story together. Be fit, live well. Contact me to
             start your journey today.
           </HeroText>
-          <Cta />
+          <Cta location="hero" />
         </HeroTextWrapper>
       </HeroImgWrapper>
     </HeroContainer>

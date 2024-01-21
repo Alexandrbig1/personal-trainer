@@ -1,4 +1,5 @@
 import {
+  DiscordIcon,
   FacebookIcon,
   InstagramIcon,
   Link,
@@ -34,6 +35,15 @@ export default function SocialIcons({ color }) {
           rel="noopener noreferrer"
         >
           <FacebookIcon color={color} />
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="https://discord.gg/4SmUx4ya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <DiscordIcon color={color} />
         </Link>
       </li>
     </SocialMenu>

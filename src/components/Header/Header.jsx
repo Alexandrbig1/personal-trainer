@@ -1,4 +1,6 @@
+// import BMI from "../BMI/BMI";
 import Logo from "../Logo/Logo";
+import MenuBurger from "../MenuBurger/MenuBurger";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import {
@@ -16,7 +18,7 @@ export default function Header({ toggleTheme, isDarkTheme }) {
         <NavContainer>
           <NavMenu>
             <li>
-              <HeaderText href="#">home</HeaderText>
+              <HeaderText href="#gallery">gallery</HeaderText>
             </li>
             <li>
               <HeaderText href="#about">about</HeaderText>
@@ -29,6 +31,7 @@ export default function Header({ toggleTheme, isDarkTheme }) {
           <ThemeSwitcher toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         </NavContainer>
       </div>
+      <MenuBurger toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
     </HeaderContainer>
   );
 }

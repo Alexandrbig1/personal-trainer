@@ -5,12 +5,18 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: top 0.3s ease-in-out;
+  position: relative;
+  z-index: 100;
 `;
 
 export const NavContainer = styled.nav`
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
 `;
 
 export const NavMenu = styled.ul`

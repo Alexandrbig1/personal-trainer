@@ -6,11 +6,13 @@ export const HeroContainer = styled.div`
   width: 100%;
   min-height: auto;
   background: url(${heroImg});
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   z-index: 1;
-  padding: 1.2rem;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
 
   display: grid;
   align-items: center;
@@ -27,9 +29,15 @@ export const HeroContainer = styled.div`
     z-index: -5;
   }
 
+  @media (min-width: 375px) {
+    padding: 1.2rem;
+  }
+
   @media (min-width: 768px) {
+    background-size: 100%;
     min-height: auto;
     padding: 3.2rem;
+    overflow: visible;
   }
 
   @media (min-width: 1440px) {
@@ -40,10 +48,11 @@ export const HeroContainer = styled.div`
 
 export const HeroImgWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   @media (min-width: 768px) {
     display: grid;
+    grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -59,12 +68,17 @@ export const HeroImgContainer = styled.div`
 `;
 
 export const HeroImg = styled.img`
-  width: 19rem;
+  width: 27rem;
+
   height: auto;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 2;
+
+  @media (min-width: 334px) {
+    width: 30rem;
+  }
 
   @media (min-width: 768px) {
     width: 35.2rem;
@@ -85,18 +99,26 @@ export const HeroImg = styled.img`
 `;
 
 export const HeroTextWrapper = styled.div`
+  order: -1;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   width: 100%;
   height: 100%;
+  padding: 1.2rem;
+
+  @media (min-width: 375px) {
+    gap: 2.4rem;
+  }
 
   @media (min-width: 768px) {
+    order: 0;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     width: 100%;
     height: 100%;
+    padding: 0;
   }
 
   @media (min-width: 1440px) {
@@ -109,7 +131,7 @@ export const HeroTextWrapper = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  text-align: end;
+  text-align: start;
   color: ${(p) => p.theme.colors.heroTextColor};
   font-family: DM Sans;
   font-size: 15px;
@@ -118,8 +140,11 @@ export const HeroTitle = styled.h1`
   line-height: 1;
   letter-spacing: 1px;
 
+  @media (min-width: 375px) {
+    font-size: 15px;
+  }
+
   @media (min-width: 768px) {
-    text-align: start;
     color: ${(p) => p.theme.colors.heroTextColor};
     font-family: DM Sans;
     font-size: 32px;
@@ -141,7 +166,7 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
-  text-align: end;
+  text-align: start;
   color: ${(p) => p.theme.colors.heroTextColor};
   font-family: DM Sans;
   font-size: 12px;
@@ -152,8 +177,16 @@ export const HeroText = styled.p`
   z-index: 5;
   margin-bottom: 1.2rem;
 
+  @media (min-width: 343px) {
+    margin-bottom: 3.6rem;
+  }
+
+  @media (min-width: 375px) {
+    font-size: 12px;
+    margin-bottom: 1.8rem;
+  }
+
   @media (min-width: 768px) {
-    text-align: start;
     font-size: 16px;
     z-index: 5;
     margin-bottom: 0;

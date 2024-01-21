@@ -7,8 +7,8 @@ export const AboutContainer = styled.div`
 
   @media (min-width: 1440px) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2.4rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 3.2rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -63,10 +63,6 @@ export const IconsContainer = styled.div`
     column-gap: 2.4rem;
     width: 100%;
     max-width: 100%;
-  }
-
-  @media (min-width: 1440px) {
-    padding: 20px;
   }
 `;
 

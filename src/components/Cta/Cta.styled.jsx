@@ -32,12 +32,14 @@ const buttonEmailAnimation = keyframes`
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${(p) => (p?.$location === "hero" ? "end" : "center")};
+  flex-direction: ${(p) => (p?.$location === "hero" ? "column" : "row")};
   gap: 1.2rem;
   z-index: 10;
 
   @media (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
     z-index: 10;

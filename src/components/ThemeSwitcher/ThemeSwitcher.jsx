@@ -8,6 +8,7 @@ export default function ThemeSwitcher({ toggleTheme, isDarkTheme }) {
   const handleThemeToggle = () => {
     toggleTheme();
   };
+
   return (
     <SwitcherTheme onClick={handleThemeToggle}>
       {isDarkTheme ? <IconClickDark /> : <IconClickLight />}

@@ -2,13 +2,20 @@ import { useState } from "react";
 import { GlobalStyle } from "./GlobalStyle";
 import Header from "./Header/Header";
 import { ThemeProvider } from "styled-components";
-import { Container, FooterContainer, Section, SectionExercise } from "./Layout";
+import {
+  Container,
+  FooterContainer,
+  Section,
+  SectionExercise,
+  SlideContainer,
+} from "./Layout";
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
+// import FetchedCards from "./FetchedCards/FetchedCards";
+import ScrollBtn from "./ScrollBtn/ScrollBtn";
 import Signs from "./Signs/Signs";
 import BMI from "./BMI/BMI";
-import ScrollBtn from "./ScrollBtn/ScrollBtn";
 import { useInView } from "react-intersection-observer";
 
 const theme = {
@@ -110,29 +117,43 @@ function App() {
     rootMargin: "100px",
   });
 
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: "100px",
+  });
+
   return (
     <ThemeProvider theme={isDarkTheme ? theme.dark : theme.light}>
       <Container>
         <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-        <BMI />
-        <Section>
-          <Hero />
-        </Section>
-        <Section>
-          <About />
-        </Section>
       </Container>
-      <SectionExercise
-        id="exercises"
-        ref={exerciseRef}
-        $inView={exerciseInView}
-      ></SectionExercise>
-      <Section>
+      <main>
         <Container>
-          <Signs />
+          <BMI />
+          <Section>
+            <Hero />
+          </Section>
+          <Section id="gallery">
+            <SlideContainer></SlideContainer>
+          </Section>
+          <Section ref={aboutRef} $inView={aboutInView}>
+            <About />
+          </Section>
         </Container>
-      </Section>
-
+        <SectionExercise
+          id="exercises"
+          ref={exerciseRef}
+          $inView={exerciseInView}
+        >
+          <Container>{/* <FetchedCards /> */}</Container>
+        </SectionExercise>
+        <Section>
+          <Container>
+            <Signs />
+          </Container>
+        </Section>
+      </main>
       <ScrollBtn />
       <FooterContainer>
         <Container>

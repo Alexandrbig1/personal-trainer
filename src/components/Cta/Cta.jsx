@@ -7,9 +7,9 @@ import {
 import { FaPhone } from "react-icons/fa";
 import { GrMailOption } from "react-icons/gr";
 
-export default function Cta() {
+export default function Cta({ location }) {
   return (
-    <ButtonsContainer>
+    <ButtonsContainer $location={location}>
       <HeroBtn
         href="tel:+17734141884"
         aria-label="Phone number +1 (773) 4141884"

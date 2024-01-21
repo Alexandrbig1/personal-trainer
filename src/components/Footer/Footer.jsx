@@ -10,6 +10,7 @@ import {
   FooterInfoWrapper,
   FooterContainer,
   FooterInfoText,
+  FooterTextAndButtonsWrapper,
 } from "./Footer.styled";
 
 const color = {
@@ -17,6 +18,7 @@ const color = {
   instagram: "#e1306c",
   youtube: "#ff0000",
   facebook: "#3b5998",
+  discord: "#7289d9",
 };
 
 export default function Footer() {
@@ -27,10 +29,14 @@ export default function Footer() {
           <Logo color={color} />
           <SocialIcons color={color} />
         </FooterLogoWrapper>
-        <TextPrivacyWrapper>
-          <FooterText>Your Health is an Investment, Not an Expense.</FooterText>
-        </TextPrivacyWrapper>
-        <Cta />
+        <FooterTextAndButtonsWrapper>
+          <TextPrivacyWrapper>
+            <FooterText>
+              Your Health is an Investment, Not an Expense.
+            </FooterText>
+          </TextPrivacyWrapper>
+          <Cta location="footer" />
+        </FooterTextAndButtonsWrapper>
       </FooterWrapper>
       <FooterInfoWrapper>
         <div>
@@ -40,9 +46,9 @@ export default function Footer() {
           </FooterInfoText>
         </div>
         <FooterInfoText>
-          <a href="#">Privacy Policy</a>
+          <a to="privacy">Privacy Policy</a>
           <span> / </span>
-          <a href="#">Terms of Service</a>
+          <a to="terms">Terms of Service</a>
         </FooterInfoText>
       </FooterInfoWrapper>
     </FooterContainer>

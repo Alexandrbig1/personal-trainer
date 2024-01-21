@@ -20,6 +20,9 @@ import {
 export default function About() {
   return (
     <AboutContainer id="about">
+      <div>
+        <AboutImg src="images/about.jpg" alt="Personal Trainer in UFC Gym" />
+      </div>
       <IconsContainer>
         <IconsCardWrapper>
           <Certificate>
@@ -117,9 +120,6 @@ export default function About() {
           </AboutCardText>
         </IconsCardWrapper>
       </IconsContainer>
-      <div>
-        <AboutImg src="images/about.jpg" alt="Personal Trainer in UFC Gym" />
-      </div>
     </AboutContainer>
   );
 }
