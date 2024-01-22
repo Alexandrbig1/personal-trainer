@@ -17,6 +17,8 @@ import ScrollBtn from "./ScrollBtn/ScrollBtn";
 import Signs from "./Signs/Signs";
 import BMI from "./BMI/BMI";
 import { useInView } from "react-intersection-observer";
+import SlideText from "./SlideText/SlideText";
+import SlideImages from "./SlideImages/SlideImages";
 
 const theme = {
   light: {
@@ -135,7 +137,10 @@ function App() {
             <Hero />
           </Section>
           <Section id="gallery">
-            <SlideContainer></SlideContainer>
+            <SlideContainer>
+              <SlideText />
+              <SlideImages />
+            </SlideContainer>
           </Section>
           <Section ref={aboutRef} $inView={aboutInView}>
             <About />
