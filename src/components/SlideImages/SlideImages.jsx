@@ -37,13 +37,13 @@ export default function SlideImages() {
           <SlideImage src="images/slide1.jpg" alt="bodybuilding competition" />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="/images/slide2.jpg" alt="bodybuilding competition" />
+          <SlideImage src="images/slide2.jpg" alt="bodybuilding competition" />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="/images/slide3.jpg" alt="bodybuilding competition" />
+          <SlideImage src="images/slide3.jpg" alt="bodybuilding competition" />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="/images/slide4.jpg" alt="bodybuilding competition" />
+          <SlideImage src="images/slide4.jpg" alt="bodybuilding competition" />
         </SlideImageWrapper>
         <SlideImageWrapper>
           <SlideImage src="/images/slide5.jpg" alt="bodybuilding competition" />
