@@ -31,7 +31,7 @@ export default function SlideText() {
             <SlideTextSmallCardWrapper>
               <SlideIconsWrapper>
                 <SlideTextSvg>
-                  <use href="/images/icons.svg#icon-fitness"></use>
+                  <use href="images/icons.svg#icon-fitness"></use>
                 </SlideTextSvg>
               </SlideIconsWrapper>
               <SlideItemsText>Bodybuilding & Fitness</SlideItemsText>
@@ -45,7 +45,7 @@ export default function SlideText() {
             <SlideTextSmallCardWrapper>
               <SlideIconsWrapper>
                 <SlideTextSvg>
-                  <use href="/images/icons.svg#icon-boxing"></use>
+                  <use href="images/icons.svg#icon-boxing"></use>
                 </SlideTextSvg>
               </SlideIconsWrapper>
               <SlideItemsText>Boxing & MMA</SlideItemsText>
@@ -58,7 +58,7 @@ export default function SlideText() {
             <SlideTextSmallCardWrapper>
               <SlideIconsWrapper>
                 <SlideTextSvg>
-                  <use href="/images/icons.svg#icon-gymnastics"></use>
+                  <use href="images/icons.svg#icon-gymnastics"></use>
                 </SlideTextSvg>
               </SlideIconsWrapper>
               <SlideItemsText>Calisthenics & Gymnastics</SlideItemsText>
@@ -71,7 +71,7 @@ export default function SlideText() {
             <SlideTextSmallCardWrapper>
               <SlideIconsWrapper>
                 <SlideTextSvg>
-                  <use href="/images/icons.svg#icon-nutrition"></use>
+                  <use href="images/icons.svg#icon-nutrition"></use>
                 </SlideTextSvg>
               </SlideIconsWrapper>
               <SlideItemsText>Health & Nutrition</SlideItemsText>
