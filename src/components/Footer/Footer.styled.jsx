@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import { robotoFont, secondaryFont } from "../fonts";
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -12,8 +13,22 @@ export const FooterLogoWrapper = styled.div`
   justify-content: space-between;
   gap: 2.4rem;
 
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+`;
+
+export const FooterLogoSocialWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+
   @media (min-width: 440px) {
     flex-direction: row;
+    gap: 2.4rem;
   }
 
   @media (min-width: 1440px) {
@@ -23,10 +38,48 @@ export const FooterLogoWrapper = styled.div`
   }
 `;
 
+export const FooterContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+`;
+
+export const FooterContactWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+`;
+
+export const FooterContactLinkText = styled.p`
+  color: ${(p) => p.theme.colors.heroTextColor};
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+`;
+
+export const FooterContactIconLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  &:hover {
+    ${FooterContactLinkText} {
+      cursor: pointer;
+      border-bottom: 1px solid ${(p) => p.theme.colors.heroTextColor};
+    }
+  }
+`;
+
+export const FooterContactIcons = styled.div`
+  font-size: 1.8rem;
+`;
+
 export const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
   justify-content: space-between;
   gap: 4.8rem;
 
@@ -53,7 +106,6 @@ export const FooterTextAndButtonsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* justify-content: space-between; */
     gap: 4.8rem;
   }
 
@@ -67,7 +119,6 @@ export const FooterTextAndButtonsWrapper = styled.div`
 
 export const FooterText = styled.p`
   color: ${(p) => p.theme.colors.heroTextColor};
-  font-family: DM Sans;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +163,6 @@ export const FooterInfoWrapper = styled.div`
 export const FooterInfoText = styled.p`
   color: ${(p) => p.theme.colors.footerInfoColor};
   text-align: right;
-  font-family: DM Sans;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
