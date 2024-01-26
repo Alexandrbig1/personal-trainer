@@ -34,31 +34,81 @@ export default function SlideImages() {
         pauseOnHover={false}
       >
         <SlideImageWrapper>
-          <SlideImage src="images/slide1.jpg" alt="bodybuilding competition" />
+          <SlideImage
+            src="images/slide1.jpg"
+            alt="bodybuilding competition"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide2.jpg" alt="bodybuilding competition" />
+          <SlideImage
+            src="images/slide2.jpg"
+            alt="bodybuilding competition"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide3.jpg" alt="bodybuilding competition" />
+          <SlideImage
+            src="images/slide3.jpg"
+            alt="bodybuilding competition"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide4.jpg" alt="bodybuilding competition" />
+          <SlideImage
+            src="images/slide4.jpg"
+            alt="bodybuilding competition"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide5.jpg" alt="bodybuilding competition" />
+          <SlideImage
+            src="images/slide5.jpg"
+            alt="bodybuilding competition"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide6.jpg" alt="bodybuilding" />
+          <SlideImage
+            src="images/slide6.jpg"
+            alt="bodybuilding"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide7.jpg" alt="personal trainer" />
+          <SlideImage
+            src="images/slide7.jpg"
+            alt="personal trainer"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide8.jpg" alt="bodybuilding" />
+          <SlideImage
+            src="images/slide8.jpg"
+            alt="bodybuilding"
+            loading="lazy"
+          />
         </SlideImageWrapper>
         <SlideImageWrapper>
-          <SlideImage src="images/slide9.jpg" alt="bodybuilding" />
+          <SlideImage
+            src="images/slide9.jpg"
+            alt="bodybuilding"
+            loading="lazy"
+          />
+        </SlideImageWrapper>
+        <SlideImageWrapper>
+          <SlideImage
+            src="images/slide10.jpg"
+            alt="bodybuilding"
+            loading="lazy"
+          />
+        </SlideImageWrapper>
+        <SlideImageWrapper>
+          <SlideImage
+            src="images/slide11.jpg"
+            alt="bodybuilding"
+            loading="lazy"
+          />
         </SlideImageWrapper>
       </Slide>
     </SlideWrapper>
