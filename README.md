@@ -1,6 +1,6 @@
 # Personal Trainer Website
 
-Welcome to the Personal Trainer Website project! This web application is built with [React](https://reactjs.org/) [![React](https://img.shields.io/badge/React-18.2.0-51CAEF.svg)](https://reactjs.org/) and [Vite](https://vitejs.dev/) [![Vite](https://img.shields.io/badge/Vite-5.0.8-6868F2)](https://vitejs.dev/), designed specifically for personal trainers to showcase their services, connect with clients, and provide valuable fitness information, expert advice, and daily motivational quotes.
+Welcome to the Personal Trainer Website project! This web application is built with [![React](https://img.shields.io/badge/React-18.2.0-51CAEF.svg)](https://reactjs.org/) and [![Vite](https://img.shields.io/badge/Vite-5.0.8-6868F2)](https://vitejs.dev/), designed specifically for personal trainers to showcase their services, connect with clients, and provide valuable fitness information, expert advice, and daily motivational quotes.
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
