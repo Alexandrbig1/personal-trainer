@@ -1,6 +1,6 @@
 # Personal Trainer Website
 
-Welcome to the Personal Trainer Website project! This web application is designed for personal trainers to showcase their services, connect with clients, and provide valuable fitness information.
+Welcome to the Personal Trainer Website project! This web application is built with [React](https://reactjs.org/) [![React](https://img.shields.io/badge/React-18.2.0-51CAEF.svg)](https://reactjs.org/) and [Vite](https://vitejs.dev/) [![Vite](https://img.shields.io/badge/Vite-5.0.8-6868F2)](https://vitejs.dev/), designed specifically for personal trainers to showcase their services, connect with clients, and provide valuable fitness information, expert advice, and daily motivational quotes.
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -21,6 +21,9 @@ Welcome to the Personal Trainer Website project! This web application is designe
 
 ## Features
 
+- **Bio and Images:** Showcase your personal trainer's biography and captivating images.
+- **Contact:** Users can easily connect with the trainer via email or phone through a convenient call-to-action button.
+- **Fitness Information:** Provide valuable fitness information, expert advice, and daily motivational quotes.
 - **Responsive Design**: The website is optimized for various devices to ensure a seamless user experience.
 - **Dynamic Content**: Use React to create dynamic and interactive components for a modern user interface.
 - **Styled Components**: Utilize Styled Components for styling, providing a modular and maintainable styling solution.
@@ -29,10 +32,9 @@ Welcome to the Personal Trainer Website project! This web application is designe
 
 ## Technologies Used
 
-- ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white): A fast development build tool for modern web apps.
-- ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black): A JavaScript library for building user interfaces.
-- ![Styled Components](https://img.shields.io/badge/styledcomponents-DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white): Use the best bits of ES6 and CSS to style your apps without stress.
-- [React Icons](https://react-icons.github.io/react-icons/): A library of popular icons for React applications.
+- **Frontend:** [React.js](https://reactjs.org/) (v18.2.0), [Vite](https://vitejs.dev/) (v5.0.8)
+- **UI Libraries:** [Material UI](https://mui.com/), [Styled Components](https://styled-components.com/)
+- **Other Tools:** [React Icons](https://react-icons.github.io/react-icons/), [Formik](https://formik.org/), [Yup](https://github.com/jquense/yup), and more.
 
 ## Issues
 
