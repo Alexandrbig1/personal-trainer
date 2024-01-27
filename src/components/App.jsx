@@ -12,7 +12,7 @@ import {
 import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
-// import FetchedCards from "./FetchedCards/FetchedCards";
+import FetchedCards from "./FetchedCards/FetchedCards";
 import ScrollBtn from "./ScrollBtn/ScrollBtn";
 import Signs from "./Signs/Signs";
 import BMI from "./BMI/BMI";
@@ -32,15 +32,12 @@ const theme = {
       mainTextColorLowOp: "rgb(36, 36, 36,0.5)",
       burgerOverlay: "rgb(250, 250, 250,0.9)",
       initialCardTextColor: "#f8f9fa",
-      // mainBgColor: "#e9ecef",
-      // mainBgColor: "#F4F4F4",
       mainBgColor: "#f8f9fa",
       mainBgColorLight: "#f8f9fa",
       mainBgColorRev: "#242424",
       mainBgColorDark: "#242424",
       aboutBgColor: "#f1f3f5",
       footerBgColor: "#242424",
-      // mainBgColor: "#f4f4f9",
       switcherHoverBg: "rgb(36, 36, 36,0.1)",
       footerInfoColor: "#C6CDD1",
       whiteColor: "#fff",
@@ -151,7 +148,9 @@ function App() {
           ref={exerciseRef}
           $inView={exerciseInView}
         >
-          <Container>{/* <FetchedCards /> */}</Container>
+          <Container>
+            <FetchedCards />
+          </Container>
         </SectionExercise>
         <Section>
           <Container>
