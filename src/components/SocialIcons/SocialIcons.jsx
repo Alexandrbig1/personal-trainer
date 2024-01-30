@@ -15,6 +15,7 @@ export default function SocialIcons({ color }) {
           href="https://instagram.com/fitlife_alex1"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Alex Smagin's Instagram profile"
         >
           <InstagramIcon color={color} />
         </Link>
@@ -24,6 +25,7 @@ export default function SocialIcons({ color }) {
           href="https://youtube.com/@ALEXandRbig1"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Alex Smagin's YouTube channel"
         >
           <YoutubeIcon color={color} />
         </Link>
@@ -33,15 +35,17 @@ export default function SocialIcons({ color }) {
           href="https://facebook.com/profile.php?id=100079407520314"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Alex Smagin's Facebook profile"
         >
           <FacebookIcon color={color} />
         </Link>
       </li>
       <li>
         <Link
-          href="https://discord.gg/4SmUx4ya"
+          href="https://discord.gg/jH3tqxTh"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Join Alex Smagin's Discord server"
         >
           <DiscordIcon color={color} />
         </Link>
