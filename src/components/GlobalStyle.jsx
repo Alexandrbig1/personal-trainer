@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import "modern-normalize/modern-normalize.css";
+import { primaryFont } from "./fonts";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   @media(max-width:980px) {
@@ -19,9 +21,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
   background-color: ${(p) => p.theme.colors.mainBgColor};
-  font-family: 'Roboto', sans-serif;
+  font-family: ${primaryFont};
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
   }
 
   p {
@@ -60,7 +63,5 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
-    /* line-height: 1; */
-    /* vertical-align: middle; */
   }
 `;

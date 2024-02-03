@@ -2,6 +2,7 @@ import Cta from "../CTA/Cta";
 import Logo from "../Logo/Logo";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Year from "../Year/Year";
+import { Link } from "react-router-dom";
 import Tooltip from "@mui/material/Tooltip";
 import { FaPhone } from "react-icons/fa";
 import { GrMailOption } from "react-icons/gr";
@@ -46,7 +47,7 @@ export default function Footer() {
             <Tooltip title="Call Me" arrow placement="right">
               <FooterContactIconLink
                 href="tel:+17734141884"
-                aria-label="Phone number +1 (773) 4141884"
+                aria-label="Call +1 (773) 414-1884"
                 rel="noopener noreferrer"
               >
                 <FooterContactIcons>
@@ -56,7 +57,10 @@ export default function Footer() {
               </FooterContactIconLink>
             </Tooltip>
             <Tooltip title="Email Me" arrow placement="right">
-              <FooterContactIconLink href="mailto:pt@alexsmagin.com">
+              <FooterContactIconLink
+                href="mailto:pt@alexsmagin.com"
+                aria-label="Email address pt@alexsmagin.com"
+              >
                 <FooterContactIcons>
                   <GrMailOption color={color.mail} />
                 </FooterContactIcons>
@@ -68,6 +72,7 @@ export default function Footer() {
                 href="https://www.google.com/maps?q=Chicago,IL,USA"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Google Maps for the location in Chicago, IL, USA"
               >
                 <FooterContactIcons>
                   <IoLocationOutline color={color.location} />
@@ -94,9 +99,9 @@ export default function Footer() {
           </FooterInfoText>
         </div>
         <FooterInfoText>
-          <a to="privacy">Privacy Policy</a>
+          <Link to="privacy">Privacy Policy</Link>
           <span> / </span>
-          <a to="terms">Terms of Service</a>
+          <Link to="terms">Terms of Service</Link>
         </FooterInfoText>
       </FooterInfoWrapper>
     </FooterContainer>

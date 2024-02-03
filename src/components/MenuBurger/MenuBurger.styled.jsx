@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
+import { sansFont } from "../fonts";
 
 export const IconMenuWrapper = styled.div`
   cursor: pointer;
@@ -94,7 +95,7 @@ export const BurgerLogoWrapper = styled.div`
 
 export const MenuText = styled.a`
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${sansFont};
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;

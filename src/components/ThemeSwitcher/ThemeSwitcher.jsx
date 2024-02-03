@@ -10,7 +10,11 @@ export default function ThemeSwitcher({ toggleTheme, isDarkTheme }) {
   };
 
   return (
-    <SwitcherTheme onClick={handleThemeToggle}>
+    <SwitcherTheme
+      type="button"
+      aria-label="Change theme"
+      onClick={handleThemeToggle}
+    >
       {isDarkTheme ? <IconClickDark /> : <IconClickLight />}
     </SwitcherTheme>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { robotoFont } from "../fonts";
 
 export const HeaderContainer = styled.header`
   padding: 2.2rem 0;
@@ -12,6 +13,7 @@ export const HeaderContainer = styled.header`
 
 export const NavContainer = styled.nav`
   display: none;
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -27,7 +29,7 @@ export const NavMenu = styled.ul`
 
 export const HeaderText = styled.a`
   color: ${(p) => p.theme.colors.mainTextColorLowOp};
-  font-family: DM Sans;
+  font-family: ${robotoFont};
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;

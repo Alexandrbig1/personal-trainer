@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import heroImg from "@/assets/hero.jpg";
+import { robotoFont, secondaryFont } from "../fonts";
 
 export const HeroContainer = styled.div`
   position: relative;
@@ -133,7 +134,7 @@ export const HeroTextWrapper = styled.div`
 export const HeroTitle = styled.h1`
   text-align: start;
   color: ${(p) => p.theme.colors.heroTextColor};
-  font-family: DM Sans;
+  font-family: ${robotoFont};
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -146,7 +147,6 @@ export const HeroTitle = styled.h1`
 
   @media (min-width: 768px) {
     color: ${(p) => p.theme.colors.heroTextColor};
-    font-family: DM Sans;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +156,6 @@ export const HeroTitle = styled.h1`
 
   @media (min-width: 1440px) {
     color: ${(p) => p.theme.colors.heroTextColor};
-    font-family: DM Sans;
     font-size: 38px;
     font-style: normal;
     font-weight: 400;
@@ -168,22 +167,25 @@ export const HeroTitle = styled.h1`
 export const HeroText = styled.p`
   text-align: start;
   color: ${(p) => p.theme.colors.heroTextColor};
-  font-family: DM Sans;
+  font-family: ${secondaryFont};
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.36px;
   z-index: 5;
-  margin-bottom: 1.2rem;
 
-  @media (min-width: 343px) {
-    margin-bottom: 3.6rem;
+  @media (min-width: 334px) {
+    margin-bottom: 1.6rem;
+  }
+
+  @media (min-width: 358px) {
+    margin-bottom: 2.2rem;
   }
 
   @media (min-width: 375px) {
     font-size: 12px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   @media (min-width: 768px) {

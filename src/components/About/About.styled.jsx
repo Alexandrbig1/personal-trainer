@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sansFont, secondaryFont } from "../fonts";
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -82,7 +83,7 @@ export const Certificate = styled.div`
 
 export const AboutCardTitle = styled.h3`
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${secondaryFont};
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 500;
@@ -92,7 +93,8 @@ export const AboutCardTitle = styled.h3`
   border-bottom: 1px solid ${(p) => p.theme.colors.accentColorLowOp};
 
   @media (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    font-size: 2rem;
   }
   @media (min-width: 1440px) {
     font-size: 2.4rem;
@@ -101,7 +103,7 @@ export const AboutCardTitle = styled.h3`
 
 export const AboutCardText = styled.p`
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${sansFont};
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +112,7 @@ export const AboutCardText = styled.p`
 
 export const AboutCardImportantText = styled.strong`
   color: ${(p) => p.theme.colors.accentColor};
-  font-family: "DM Sans", sans-serif;
+  font-family: ${secondaryFont};
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;

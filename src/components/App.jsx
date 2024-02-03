@@ -1,24 +1,15 @@
 import { useState } from "react";
-import { GlobalStyle } from "./GlobalStyle";
-import Header from "./Header/Header";
 import { ThemeProvider } from "styled-components";
+import RootLayout from "../layouts/RootLayout/RootLayout";
+import { lazy } from "react";
+import { GlobalStyle } from "./GlobalStyle";
+import FontsHelmet from "./FontsHelmet";
 import {
-  Container,
-  FooterContainer,
-  Section,
-  SectionExercise,
-  SlideContainer,
-} from "./Layout";
-import Hero from "./Hero/Hero";
-import Footer from "./Footer/Footer";
-import About from "./About/About";
-import FetchedCards from "./FetchedCards/FetchedCards";
-import ScrollBtn from "./ScrollBtn/ScrollBtn";
-import Signs from "./Signs/Signs";
-import BMI from "./BMI/BMI";
-import { useInView } from "react-intersection-observer";
-import SlideText from "./SlideText/SlideText";
-import SlideImages from "./SlideImages/SlideImages";
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 
 const theme = {
   light: {
@@ -33,6 +24,7 @@ const theme = {
       burgerOverlay: "rgb(250, 250, 250,0.9)",
       initialCardTextColor: "#f8f9fa",
       mainBgColor: "#f8f9fa",
+      secondaryBgColor: "#dfe0e1",
       mainBgColorLight: "#f8f9fa",
       mainBgColorRev: "#242424",
       mainBgColorDark: "#242424",
@@ -57,6 +49,7 @@ const theme = {
       notActivePaginationButton: "#d4d4d4",
       scrollUpColor: "rgba(18, 20, 23, 0.5)",
       slideArrowButtons: "rgba(244, 244, 244, 0.9)",
+      readMoreBtn: "#1f09cd",
     },
   },
   dark: {
@@ -71,6 +64,7 @@ const theme = {
       burgerOverlay: "rgb(36, 36, 36,0.9)",
       initialCardTextColor: "#f8f9fa",
       mainBgColor: "#242424",
+      secondaryBgColor: "#1a1a1a",
       mainBgColorRev: "#f8f9fa",
       mainBgColorLight: "#f8f9fa",
       mainBgColorDark: "#242424",
@@ -95,9 +89,15 @@ const theme = {
       notActivePaginationButton: "#494949",
       scrollUpColor: "rgba(200, 200, 200, 0.5)",
       slideArrowButtons: "rgba(244, 244, 244, 0.9)",
+      readMoreBtn: "#4dabf7",
     },
   },
 };
+
+const Home = lazy(() => import("../Pages/Home/Home"));
+const Privacy = lazy(() => import("../Pages/Privacy/Privacy"));
+const Terms = lazy(() => import("../Pages/Terms/Terms"));
+const NotFound = lazy(() => import("../Pages/NotFound/NotFound"));
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
@@ -110,61 +110,66 @@ function App() {
     localStorage.setItem("theme", isDarkTheme ? "light" : "dark");
   };
 
-  const { ref: exerciseRef, inView: exerciseInView } = useInView({
-    triggerOnce: true,
-    threshold: 0,
-    rootMargin: "100px",
-  });
+  const scrollToTop = () => {
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: "smooth",
+    // });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  };
 
-  const { ref: aboutRef, inView: aboutInView } = useInView({
-    triggerOnce: true,
-    threshold: 0,
-    rootMargin: "100px",
-  });
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route
+        path="/personal-trainer/"
+        element={
+          <RootLayout toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+        }
+      >
+        <Route
+          index
+          element={<Home toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />}
+        />
+        <Route
+          path="privacy"
+          element={
+            <Privacy
+              toggleTheme={toggleTheme}
+              isDarkTheme={isDarkTheme}
+              scrollToTop={scrollToTop}
+            />
+          }
+        />
+        <Route
+          path="terms"
+          element={
+            <Terms
+              toggleTheme={toggleTheme}
+              isDarkTheme={isDarkTheme}
+              scrollToTop={scrollToTop}
+            />
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <NotFound
+              toggleTheme={toggleTheme}
+              isDarkTheme={isDarkTheme}
+              scrollToTop={scrollToTop}
+            />
+          }
+        />
+      </Route>
+    )
+  );
 
   return (
     <ThemeProvider theme={isDarkTheme ? theme.dark : theme.light}>
-      <Container>
-        <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-      </Container>
-      <main>
-        <Container>
-          <BMI />
-          <Section>
-            <Hero />
-          </Section>
-          <Section id="gallery">
-            <SlideContainer>
-              <SlideText />
-              <SlideImages />
-            </SlideContainer>
-          </Section>
-          <Section ref={aboutRef} $inView={aboutInView}>
-            <About />
-          </Section>
-        </Container>
-        <SectionExercise
-          id="exercises"
-          ref={exerciseRef}
-          $inView={exerciseInView}
-        >
-          <Container>
-            <FetchedCards />
-          </Container>
-        </SectionExercise>
-        <Section>
-          <Container>
-            <Signs />
-          </Container>
-        </Section>
-      </main>
-      <ScrollBtn />
-      <FooterContainer>
-        <Container>
-          <Footer />
-        </Container>
-      </FooterContainer>
+      <FontsHelmet />
       <GlobalStyle />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

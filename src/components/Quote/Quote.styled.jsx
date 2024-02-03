@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primaryFont, sansFont, secondaryFont } from "../fonts";
+import { primaryFont, secondaryFont } from "../fonts";
 
 export const QuotesWrapper = styled.aside`
   display: flex;
@@ -238,27 +238,4 @@ export const QuotesWorkoutSubTitle = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
-`;
-
-export const QuotesWorkoutText = styled.p`
-  color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: ${sansFont};
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-
-  @media (min-width: 1440px) {
-    overflow: unset;
-    text-overflow: unset;
-    display: unset;
-    -webkit-box-orient: unset;
-    -webkit-line-clamp: unset;
-  }
 `;

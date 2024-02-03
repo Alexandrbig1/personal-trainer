@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { logoFont } from "../fonts";
 
 export const LogoContainer = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ export const LogoContainer = styled.div`
 export const LogoTitle = styled.span`
   color: ${(props) =>
     props?.color ? props?.color?.white : props.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${logoFont};
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;

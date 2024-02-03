@@ -1,3 +1,6 @@
+import useApiService from "../../services/apiService";
+import { useEffect, useState } from "react";
+import ReadMoreText from "../ReadMore/ReadMore";
 import {
   QuotesWrapper,
   QuotesContainer,
@@ -17,11 +20,8 @@ import {
   QuotesWorkoutTitleWrapper,
   QuotesWorkoutTitle,
   QuotesWorkoutSubTitle,
-  QuotesWorkoutText,
   QuotesAuthor,
 } from "./Quote.styled";
-import useApiService from "../../services/apiService";
-import { useEffect, useState } from "react";
 
 export default function Quote() {
   const [quote, setQuote] = useState("");
@@ -78,14 +78,14 @@ export default function Quote() {
       <QuotesContainer>
         <QuotesIconWrapper>
           <QuotesIconLogo aria-label="running icon">
-            <use href="/images/icons.svg#icon-running"></use>
+            <use href="images/icons.svg#icon-running"></use>
           </QuotesIconLogo>
         </QuotesIconWrapper>
         <QuotesTextWrapper>
           <QuotesTitleWrapper>
             <QuotesTitle>Quote of the day</QuotesTitle>
             <QuoteIcon aria-label="quotes-icon">
-              <use href="/images/icons.svg#icon-quotes"></use>
+              <use href="images/icons.svg#icon-quotes"></use>
             </QuoteIcon>
           </QuotesTitleWrapper>
           <QuotesText>{quote}</QuotesText>
@@ -94,7 +94,7 @@ export default function Quote() {
       </QuotesContainer>
       <QuotesImageWrapper>
         <QuotesImage
-          src="/images/quote.jpg"
+          src="images/quote.jpg"
           alt="Personal Trainer"
           width="335"
           height="242"
@@ -104,7 +104,7 @@ export default function Quote() {
       <QuotesInfo>
         <QuotesInfoWrapper>
           <QuotesGymIcon aria-label="dumbell-icon">
-            <use href="/images/icons.svg#icon-dumbbell"></use>
+            <use href="images/icons.svg#icon-dumbbell"></use>
           </QuotesGymIcon>
         </QuotesInfoWrapper>
         <QuotesWorkoutTextWrapper>
@@ -112,7 +112,7 @@ export default function Quote() {
             <QuotesWorkoutTitle>110 min</QuotesWorkoutTitle>
             <QuotesWorkoutSubTitle>Daily norm of sports</QuotesWorkoutSubTitle>
           </QuotesWorkoutTitleWrapper>
-          <QuotesWorkoutText>
+          <ReadMoreText>
             The World Health Organization recommends at least 150 minutes of
             moderate-intensity aerobic physical activity throughout the week for
             adults aged 18-64. However, what happens if we adjust that number to
@@ -120,7 +120,7 @@ export default function Quote() {
             hit, dedicating 110 minutes daily to sporting activities may offer
             unparalleled benefits to physical health, mental well-being, and
             overall quality of life.
-          </QuotesWorkoutText>
+          </ReadMoreText>
         </QuotesWorkoutTextWrapper>
       </QuotesInfo>
     </QuotesWrapper>

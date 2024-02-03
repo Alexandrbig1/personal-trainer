@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { robotoFont, secondaryFont } from "../fonts";
+import { robotoFont, secondaryFont } from "../fonts";
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -52,6 +52,7 @@ export const FooterContactWrapper = styled.div`
 
 export const FooterContactLinkText = styled.p`
   color: ${(p) => p.theme.colors.heroTextColor};
+  font-family: ${secondaryFont};
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -119,6 +120,7 @@ export const FooterTextAndButtonsWrapper = styled.div`
 
 export const FooterText = styled.p`
   color: ${(p) => p.theme.colors.heroTextColor};
+  font-family: ${robotoFont};
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 400;
@@ -163,6 +165,7 @@ export const FooterInfoWrapper = styled.div`
 export const FooterInfoText = styled.p`
   color: ${(p) => p.theme.colors.footerInfoColor};
   text-align: right;
+  font-family: ${secondaryFont};
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { IoMdClose } from "react-icons/io";
 import { Field, Form, ErrorMessage } from "formik";
+import { primaryFont, secondaryFont } from "../fonts";
 
 export const CalculatorContainer = styled.div`
   visibility: ${(props) => (props?.$showBMI ? "visible" : "hidden")};
@@ -87,7 +88,7 @@ export const FieldStyled = styled(Field)`
   }
 
   &::placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: ${secondaryFont};
     font-size: 1.4rem;
     font-weight: 300;
     line-height: normal;
@@ -115,7 +116,7 @@ export const FormError = styled(ErrorMessage)`
 
 export const Label = styled.label`
   color: ${(p) => p.theme.colors.mainBgColorLight};
-  font-family: DM Sans;
+  font-family: ${primaryFont};
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -124,6 +125,7 @@ export const Label = styled.label`
 
 export const BMIButton = styled.button`
   width: 100%;
+  font-family: ${secondaryFont};
   border: none;
   outline: none;
   background: none;
@@ -148,7 +150,7 @@ export const MessageIcon = styled.svg`
 
 export const BMIText = styled.p`
   color: ${(p) => p.theme.colors.mainBgColorLight};
-  font-family: DM Sans;
+  font-family: ${secondaryFont};
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
@@ -157,7 +159,7 @@ export const BMIText = styled.p`
 `;
 
 export const BMISubText = styled.span`
-  font-family: DM Sans;
+  font-family: ${secondaryFont};
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;

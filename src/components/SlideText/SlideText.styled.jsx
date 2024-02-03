@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { primaryFont, robotoFont, sansFont } from "../fonts";
 
 export const SlideCardsContainer = styled.div`
   border-radius: 1.2rem;
@@ -23,10 +24,10 @@ export const SlideTitleWrapper = styled.div`
   gap: 2.4rem;
 `;
 
-export const SlideTextTitle = styled.h3`
+export const SlideTextTitle = styled.h2`
   text-align: center;
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${primaryFont};
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -38,7 +39,7 @@ export const SlideTextTitle = styled.h3`
 
 export const SlideTextTitleSub = styled.p`
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${sansFont};
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -111,20 +112,35 @@ export const SlideTextSvg = styled.svg`
   width: 4.4rem;
   height: 4.4rem;
 `;
+
 export const SlideItemsText = styled.p`
   color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: DM Sans;
+  font-family: ${robotoFont};
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: -0.26px;
+
+  @media (min-width: 325px) {
+    letter-spacing: 0px;
+  }
+
+  @media (min-width: 1440px) {
+    line-height: 1;
+    letter-spacing: -0.46px;
+  }
 `;
 
 export const SlideItemsSubText = styled.p`
   color: ${(p) => p.theme.colors.secondaryBlackTextColorLowOp};
-  font-family: DM Sans;
-  font-size: 14px;
+  font-family: ${robotoFont};
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
+
+  @media (min-width: 1440px) {
+    letter-spacing: -0.386px;
+  }
 `;

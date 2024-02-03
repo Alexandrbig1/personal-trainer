@@ -12,7 +12,7 @@ export default function Cta({ location }) {
     <ButtonsContainer $location={location}>
       <HeroBtn
         href="tel:+17734141884"
-        aria-label="Phone number +1 (773) 4141884"
+        aria-label="Call Now +1 (773) 414-1884"
         rel="noopener noreferrer"
       >
         Call Now
@@ -20,7 +20,10 @@ export default function Cta({ location }) {
           <FaPhone />
         </ButtonIconTelWrapper>
       </HeroBtn>
-      <HeroBtn href="mailto:pt@alexsmagin.com">
+      <HeroBtn
+        href="mailto:pt@alexsmagin.com"
+        aria-label="Email Me at pt@alexsmagin.com"
+      >
         Email Me
         <ButtonIconMailWrapper>
           <GrMailOption />

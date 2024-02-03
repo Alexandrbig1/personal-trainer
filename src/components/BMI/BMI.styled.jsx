@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { secondaryFont } from "../fonts";
 
 const backgroundAnimation = keyframes`
   0% {
@@ -15,7 +16,7 @@ const backgroundAnimation = keyframes`
 
 export const BMIHeaderText = styled.p`
   color: ${(p) => p.theme.colors.heroTextColorLowOp};
-  font-family: DM Sans;
+  font-family: ${secondaryFont};
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;

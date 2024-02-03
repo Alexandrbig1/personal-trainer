@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { sansFont } from "../fonts";
 
 const buttonAnimation = keyframes`
   0% {
@@ -88,7 +89,7 @@ export const HeroBtn = styled.a`
   align-items: center;
   gap: 0.8rem;
   color: ${(p) => p.theme.colors.heroTextColor};
-  font-family: DM Sans;
+  font-family: ${sansFont};
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
