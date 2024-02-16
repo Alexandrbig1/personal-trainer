@@ -20,6 +20,7 @@ Welcome to the Personal Trainer Website project! This web application is built w
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [License](#license)
+- [Connect with me](#connect-with-me)
 
 ## Features
 
