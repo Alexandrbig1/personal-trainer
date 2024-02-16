@@ -17,10 +17,22 @@ Welcome to the Personal Trainer Website project! This web application is built w
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [License](#license)
 - [Connect with me](#connect-with-me)
+
+### Screenshots:
+
+![Task Pro App](/public/images/screenshots/personaltrainer.jpg) _Caption for Screenshot 1
+(Home Page Dark Theme)_
+
+![Task Pro App](/public/images/screenshots/personaltrainer2.jpg) _Caption for Screenshot 2
+(Home Page Dark Theme)_
+
+![Task Pro App](/public/images/screenshots/personaltrainer3.jpg) _Caption for Screenshot 3
+(Home Page Light Theme)_
 
 ## Features
 
